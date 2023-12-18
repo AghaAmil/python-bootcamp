@@ -76,3 +76,31 @@ print('')
 
 print('{0:<10} | {1:^10} | {2:>10}'.format('Left', 'Center', 'Right'))
 print('{0:<10} | {1:^10} | {2:>10}'.format(11, 22, 33))
+
+# blank line
+print('')
+
+print('{0:=<10} | {1:-^10} | {2:.>10}'.format('Left', 'Center', 'Right'))
+print('{0:=<10} | {1:-^10} | {2:.>10}'.format(11, 22, 33))
+
+# blank line
+print('')
+
+# decimal numbers using .format()
+print('This is my tenth character, two-decimal number %10.2f' % 45.778)
+print('This is my tenth character, two-decimal number {0:10.2f}'.format(45.778))
+
+# blank line
+print('')
+
+# Formatted String Literals (f-strings)
+print(f'My full name is : {my_full_name}')
+print(f'My first name is : {my_full_name!r}')
+
+num = 12.778983
+print(f'The result of the calculation is equal to : {num:{15}.{3}}')
+print(f'The result of the calculation is equal to : {num:{10}.{6}}')
+print(f'The result of the calculation is equal to : {num:.{6}}')
+
+# use .format() method syntax inside an f-string
+print(f'The result of the calculation is equal to : {num:10.3f}')
