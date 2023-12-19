@@ -103,7 +103,25 @@ print(matrix_1[0][0])
 print(matrix_1[1][1])
 print(matrix_1[2][2])
 
+# blank line
+print('')
+
 # list comprehension
-"""
-Lists comprehension will be explained later
-"""
+# Here is an example of using list comprehension to find the square of the number in Python.
+numbers = [1, 2, 3, 4, 5]
+squared = [i ** 2 for i in numbers]
+print(squared)
+
+# In this example, we are assigning 1, 2, and 3 to the list, and we are printing the list using List Comprehension.
+sample_list = [item for item in [1, 2, 3, 4]]
+print(sample_list)
+
+# In this example, we are printing the even numbers from 0 to 10 using List Comprehension.
+even_numbers = [i for i in range(11) if i % 2 == 0]
+print(even_numbers)
+
+# In this example, we are assigning integers 0 to 2 to 3 rows of the matrix and printing it using List Comprehension.
+sample_matrix = [[j for j in range(3)] for i in range(3)]
+print(sample_matrix)
+
+
