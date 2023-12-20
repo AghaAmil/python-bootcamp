@@ -22,3 +22,8 @@ print(my_set)
 my_list = [1, 1, 1, 2, 3, 4, 5, 4, 4, 4, 5, 6, 4, 3, 3, 2, 4, 3, 4]
 print(my_list)
 print(set(my_list))
+
+# convert a string into a set of unique characters
+string_1 = 'Amirhossein'
+print(set(string_1))
+
