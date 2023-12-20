@@ -27,3 +27,20 @@ print(set(my_list))
 string_1 = 'Amirhossein'
 print(set(string_1))
 
+# blank line
+print('')
+
+# booleans
+a = True
+b = False
+
+print(a)
+print(b)
+
+print(type(a))
+print(type(b))
+
+# We can use None as a placeholder for an object that we don't want to reassign yet:
+none_variable = None
+print(none_variable)
+print(type(none_variable))
