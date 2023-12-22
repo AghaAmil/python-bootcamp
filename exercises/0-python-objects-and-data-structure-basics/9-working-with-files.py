@@ -26,3 +26,4 @@ print('Store the content of file line-by-line in a variable and then print it: \
 file_content = my_file.readline()
 
 print(file_content)
+
