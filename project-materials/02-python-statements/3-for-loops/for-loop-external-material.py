@@ -73,6 +73,7 @@ print('\n')
 
 # Using "for" Loop with Sequence Index
 sample_num4 = [34, 54, 67, 21, 78, 45, 12]
+print(sample_num4)
 range_value = range(len(sample_num4))
 
 for items in range_value:
@@ -87,3 +88,16 @@ print(numbers)
 
 for x in numbers:
     print(f'{x} : {numbers[x]}')
+
+# blank line
+print()
+
+for y in numbers:
+    print(f'Only the key pairs of the dictionary: {numbers.keys()}')
+
+
+# blank line
+print()
+
+for z in numbers:
+    print(f'Only the value pairs of the dictionary: {numbers.values()}')
