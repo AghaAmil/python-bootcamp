@@ -28,3 +28,12 @@ print('Slicing the string [::]', my_string_2[::])
 print('Slicing the string [::2]', my_string_2[::2])
 print('Slicing the string [::-1] (string reversed)', my_string_2[::-1])
 print('Slicing the string [-9:-4]', my_string_2[-9:-4])
+
+# blank line
+print()
+
+# string concatenation
+name = 'Amirhossein Moravveji'
+age = 30
+
+print('My name is ' + name + ' and I\'m ' + str(age) + ' years old.')
