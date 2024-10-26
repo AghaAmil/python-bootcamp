@@ -18,9 +18,36 @@ def sorting(numbers, option):
         return numbers
 
 
+# sort a list without using built-in python functions
+def bubble_sorting(numbers, option):
+    def asc(arr):
+        for i in range(len(arr)):
+            for j in range(len(arr) - i - 1):
+                if arr[j] > arr[j + 1]:
+                    arr[j], arr[j + 1] = arr[j + 1], arr[j]
+
+        return arr
+
+    def desc(arr):
+        for i in range(len(arr)):
+            for j in range(len(arr) - i - 1):
+                if arr[j] < arr[j + 1]:
+                    arr[j], arr[j + 1] = arr[j + 1], arr[j]
+
+        return arr
+
+    if option == "asc":
+        return asc(numbers)
+    elif option == "desc":
+        return desc(numbers)
+    else:
+        return numbers
+
+
 input_numbers = input('Enter the list of numbers (The numbers should be separated by ","): ')
 input_sort = input('Enter the sorting options out of (asc,desc,none): ')
 
 input_numbers_list = [int(num) for num in input_numbers.split(',')]
 
 print(f'The sorted list based on {input_sort} is: {sorting(input_numbers_list, input_sort)}')
+print(f'The sorted list based on {input_sort} is: {bubble_sorting(input_numbers_list, input_sort)}')
